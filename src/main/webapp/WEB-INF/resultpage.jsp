@@ -17,7 +17,22 @@
         <div>
             <h2>BMI Result</h2>
 
-            <p>Her kommer resultaterne</p>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>Højde</th>
+                        <th>Vægt</th>
+                        <th>BMI</th>
+                        <th>Værdi</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td>${requestScope.height}</td>
+                        <td>${requestScope.weight}</td>
+                        <td>${requestScope.bmi}</td>
+                        <td>${requestScope.category}</td>
+                    </tr>
+            </table>
 
         </div>
 
